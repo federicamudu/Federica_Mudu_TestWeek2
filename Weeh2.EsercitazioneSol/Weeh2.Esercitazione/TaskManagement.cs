@@ -14,6 +14,7 @@ namespace Weeh2.Esercitazione
             Console.WriteLine("2. Aggiungere un nuovo task;");
             Console.WriteLine("3. Eliminare un task esistente;");
             Console.WriteLine("4. Filtrare i tasks per importanza (ovvero per livello di priorità);");
+            Console.WriteLine("5. Leggi i task che hai salvato dal file");
             Console.WriteLine("Qualsiasi altro valore per uscire");
             Console.Write("Scelta: >");
             Int32.TryParse(Console.ReadLine(), out int scelta);
@@ -56,6 +57,7 @@ namespace Weeh2.Esercitazione
                 foreach (Task taskDaScrivere in task)
                 {
                     sw.WriteLine(taskDaScrivere);
+                    
                 }
             }
         }
@@ -71,7 +73,7 @@ namespace Weeh2.Esercitazione
                 while (line != null)
                 {
                     string[] valoriTask = line.Split('-');
-                    string descrizione = valoriTask[0].Substring(19);
+                    string descrizione = valoriTask[0].Substring(18);
                     int livelloPriorita = Int32.Parse(valoriTask[1].Substring(21));
                     DateTime dataScadenza = DateTime.Parse(valoriTask[2].Substring(17));
                     Task t = new Task()
@@ -86,6 +88,21 @@ namespace Weeh2.Esercitazione
                 }
             }
             return taskCaricatiDaFile;
+        }
+
+        public static void LeggiTaskDaFile()
+        {
+            string path = @"C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\AgendaTask.txt";
+            string line;
+            using (StreamReader sr = File.OpenText(path))
+            {
+                line = sr.ReadLine();
+                while (line != null)
+                {
+                    Console.WriteLine(line);
+                    line = sr.ReadLine();
+                }
+            }
         }
 
         public static Task CarcaTask(ArrayList tasks)
@@ -129,16 +146,6 @@ namespace Weeh2.Esercitazione
             }
         }
 
-        public static void StampaTaskVideo(ArrayList tasks)
-        {
-            foreach(Task task1 in tasks)
-            {
-                StampaTask(task1);
-            }
-        }
-        public static void StampaTask(Task tasks)
-        {
-            Console.WriteLine(tasks);
-        }
+        
     }
 }

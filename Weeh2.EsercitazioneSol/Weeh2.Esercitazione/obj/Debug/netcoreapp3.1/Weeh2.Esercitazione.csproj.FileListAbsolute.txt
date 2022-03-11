@@ -11,3 +11,4 @@ C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazio
 C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.dll
 C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.pdb
 C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.genruntimeconfig.cache
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.csproj.AssemblyReference.cache

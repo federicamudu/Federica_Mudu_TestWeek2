@@ -18,8 +18,9 @@ namespace Weeh2.Esercitazione
                 {
                     case 1:
                         //Visualizzare i tasks
+                        //TaskManagement.LeggiTaskDaFile();
                         TaskManagement.CaricaTaskDaFile();
-                        foreach(Task lineaTask in listaTask)
+                        foreach (Task lineaTask in listaTask)
                         {
                             Console.WriteLine(lineaTask);
                         }
@@ -37,7 +38,9 @@ namespace Weeh2.Esercitazione
                     case 4:
                         //Filtrare i tasks per importanza
                         TaskManagement.FiltroPriorita(listaTask);
-                        TaskManagement.ScriviTaskSuFile(listaTask);
+                        break;
+                    case 5:
+                        TaskManagement.LeggiTaskDaFile();
                         break;
                     default:
                         continua = false;
