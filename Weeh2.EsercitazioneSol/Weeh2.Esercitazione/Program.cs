@@ -37,6 +37,7 @@ namespace Weeh2.Esercitazione
                     case 4:
                         //Filtrare i tasks per importanza
                         TaskManagement.FiltroPriorita(listaTask);
+                        TaskManagement.ScriviTaskSuFile(listaTask);
                         break;
                     default:
                         continua = false;

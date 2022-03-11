@@ -1,0 +1,13 @@
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\bin\Debug\netcoreapp3.1\Weeh2.Esercitazione.exe
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\bin\Debug\netcoreapp3.1\Weeh2.Esercitazione.deps.json
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\bin\Debug\netcoreapp3.1\Weeh2.Esercitazione.runtimeconfig.json
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\bin\Debug\netcoreapp3.1\Weeh2.Esercitazione.runtimeconfig.dev.json
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\bin\Debug\netcoreapp3.1\Weeh2.Esercitazione.dll
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\bin\Debug\netcoreapp3.1\Weeh2.Esercitazione.pdb
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.AssemblyInfoInputs.cache
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.AssemblyInfo.cs
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.csproj.CoreCompileInputs.cache
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.dll
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.pdb
+C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\obj\Debug\netcoreapp3.1\Weeh2.Esercitazione.genruntimeconfig.cache

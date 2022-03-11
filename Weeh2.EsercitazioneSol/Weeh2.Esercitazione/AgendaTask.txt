@@ -1,1 +1,2 @@
-﻿
+Descrizione task: caf-Livello di priorità: 1-Data di scadenza 18/03/2022 00:00:00
+Descrizione task: meccanico-Livello di priorità: 2-Data di scadenza 16/03/2022 00:00:00

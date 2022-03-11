@@ -29,7 +29,7 @@ namespace Weeh2.Esercitazione
             task.Descrizione = Console.ReadLine();
             Console.WriteLine("Inserisci data di scadenza: ");
             DateTime.TryParse(Console.ReadLine(), out dataScadenza);
-            while (DateTime.Now > task.DataScadenza)
+            while (DateTime.Now < task.DataScadenza)
             {
                 Console.WriteLine("E' un task, non una macchina del tempo.\nInserisci una data futura: ");
                 DateTime.TryParse(Console.ReadLine(), out dataScadenza);
@@ -50,7 +50,7 @@ namespace Weeh2.Esercitazione
 
         public static void ScriviTaskSuFile(ArrayList task)
         {
-            string path = Path.Combine(Environment.CurrentDirectory, "AgendaTask.txt");
+            string path = @"C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\AgendaTask.txt";
             using (StreamWriter sw = File.CreateText(path))
             {
                 foreach (Task taskDaScrivere in task)
@@ -63,7 +63,7 @@ namespace Weeh2.Esercitazione
         public static ArrayList CaricaTaskDaFile()
         {
             ArrayList taskCaricatiDaFile = new ArrayList();
-            string path = Path.Combine(Environment.CurrentDirectory, "AgendaTask.txt");
+            string path = @"C:\Users\Federica\Desktop\Esercitazione\Weeh2.EsercitazioneSol\Weeh2.Esercitazione\AgendaTask.txt";
             string line;
             using (StreamReader sr = File.OpenText(path))
             {
@@ -72,8 +72,8 @@ namespace Weeh2.Esercitazione
                 {
                     string[] valoriTask = line.Split('-');
                     string descrizione = valoriTask[0].Substring(19);
-                    int livelloPriorita = Int32.Parse(valoriTask[1].Substring(22));
-                    DateTime dataScadenza = DateTime.Parse(valoriTask[2].Substring(19));
+                    int livelloPriorita = Int32.Parse(valoriTask[1].Substring(21));
+                    DateTime dataScadenza = DateTime.Parse(valoriTask[2].Substring(17));
                     Task t = new Task()
                     {
                         Descrizione = descrizione,
@@ -103,23 +103,17 @@ namespace Weeh2.Esercitazione
             return null;
         }
 
-        public static ArrayList FiltroPriorita(ArrayList tasks)
+        public static void FiltroPriorita(ArrayList tasks)
         {
-            ArrayList taskOrdinatiPriorità = new ArrayList();
-            Console.WriteLine("Per quale livello di priorità vuoi fitrare i tuoi tasks?\n-> 1. Alto\n->2. Medio\n->3. Basso");
-            int livello = Int32.Parse(Console.ReadLine());
-            foreach(Task task in tasks)
+            Console.WriteLine("Inserisci quale livello di priorità vuoi filtrare: ");
+            int livelloPrioritaUtente = Int32.Parse(Console.ReadLine());
+            foreach (Task task in tasks)
             {
-                if (task.LivelloPriorita.Equals(livello))
+                if (task.LivelloPriorita == livelloPrioritaUtente)
                 {
-                    taskOrdinatiPriorità.Add(task);
-                }
-                else
-                {
-                    Console.WriteLine("Nessun task presente con questo livello di priorità");
+                    Console.WriteLine($"Task: {task.Descrizione}, con priorità: {task.LivelloPriorita} e data di scadenza: {task.DataScadenza}");
                 }
             }
-            return taskOrdinatiPriorità;
         }
         public static void EliminaTask(ArrayList tasks)
         {
